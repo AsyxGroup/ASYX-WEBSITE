@@ -1,0 +1,4 @@
+import { PageHero } from "@/components/page-hero"
+import { Section } from "@/components/section"
+export const metadata={title:"Insights",description:"ASYX Group insights and updates."}
+export default function Blog(){return <><PageHero label="Insights" title="Technology insights and company updates." subtitle="This section is ready for verified ASYX articles, project updates and thought leadership." bgImage="/asyx/hero.jpg"/><Section><div className="mx-auto max-w-2xl rounded-2xl border border-dashed border-border bg-muted/30 p-8 text-center"><h2 className="text-xl font-semibold">Content publishing area</h2><p className="mt-3 text-sm leading-6 text-muted-foreground">No unverified articles were carried over from the previous website content. Add approved ASYX updates here when they are available.</p></div></Section></>}
