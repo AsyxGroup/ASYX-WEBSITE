@@ -5,7 +5,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, Phone, X, Clock3 } from "lucide-react"
 import { cn } from "@workspace/ui/lib/utils"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { navLinks, siteConfig } from "@/lib/data"
 
 export function SiteNavbar() {
@@ -15,7 +14,7 @@ export function SiteNavbar() {
 
   // Set your actual launch date/time here.
   // This example is approximately 3 days from now.
-  const launchDate = new Date("2026-08-31T00:00:00+03:00").getTime()
+  const launchDate = new Date("2026-09-29T00:00:00+03:00").getTime()
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -142,8 +141,6 @@ export function SiteNavbar() {
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <ThemeToggle />
-
             {/* Desktop Launch Countdown */}
             <div className="hidden items-center gap-2 rounded-xl border border-primary/20 bg-primary/5 px-4 py-2 sm:flex">
               <Clock3 className="size-4 text-primary" />
@@ -280,13 +277,6 @@ export function SiteNavbar() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between pt-2">
-                <span className="text-sm text-muted-foreground">
-                  Theme
-                </span>
-
-                <ThemeToggle />
-              </div>
             </div>
           </div>
         </div>
